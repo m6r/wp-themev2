@@ -31,3 +31,21 @@ function excerpt_more() {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+/**
+ * Add Prebuilt Layout for Page Builder
+ */
+/*function m6r_prebuilt_layouts($layouts){
+  $layouts['home-page'] = array(
+    // We'll add a title field
+    'name' => __('Page d\'accueil par défaut', 'vantage'),
+    'widgets' => array( ... ),
+    'grids' => array( ... ),
+    'grid_cells' => array( ... )
+  );
+
+  return $layouts;
+}
+
+add_filter('siteorigin_panels_prebuilt_layouts','m6r_prebuilt_layouts');
+*/

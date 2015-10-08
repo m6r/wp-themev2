@@ -1,0 +1,50 @@
+header {
+  .header-image {
+    min-height: 500px;
+    overflow: hidden;
+    background-size: cover;
+
+    & > .container > .row {
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      .sidebar-header-left,
+      .sidebar-header-right {
+        @media (min-width: $screen-md-min) {
+          min-height: 460px;
+
+          & > .row-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            right: 15px;
+          }
+        }
+
+        & > section.widget {
+          margin: 5px 0px;
+        }
+      }
+    }
+  }
+
+  .navbar-default {
+    background-color: #fff;
+    border: 0px;
+    border-bottom: 3px solid $link-color;
+    border-radius: 0;
+
+    .navbar-nav > li > a,
+    .navbar-nav > li.active > a {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $link-color;
+      background-color: #fff;
+
+      &:hover {
+        background-color: #fff;
+        color: $link-hover-color;
+      }
+    }
+  }
+}
